@@ -108,7 +108,7 @@ class App extends React.Component {
     .then(response => {
       this.outLineFaces(this.calculateFaceLocation(response))
       if(response){
-        fetch('http://localhost:3000/image', {
+        fetch('https://salty-beach-47396.herokuapp.com/image', {
           method: 'put',
           headers: {'content-type': 'application/json'},
           body: JSON.stringify({

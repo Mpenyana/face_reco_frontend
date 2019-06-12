@@ -34,7 +34,7 @@ class Register extends React.Component{
 			alert('Invalid form submission.')
 		}
 		else{
-			fetch('http://localhost:3000/register', {
+			fetch('https://salty-beach-47396.herokuapp.com/register', {
 				method: 'post',
 				headers: {'content-type': 'application/json'},
 				body: JSON.stringify({
