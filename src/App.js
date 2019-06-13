@@ -12,7 +12,7 @@ import Clarifai from 'clarifai';
 const particlesOption = {
       "particles": {
           "number": {
-              "value": 90
+              "value": 20
           },
           "size": {
               "value": 3
@@ -33,7 +33,7 @@ const app = new Clarifai.App({
 });
 
 const initialState = {
-      route: 'signin',
+      route: 'home',
       isSignedIn: false,
       input: '',
       imageUrl: '',
@@ -125,8 +125,8 @@ class App extends React.Component {
   render(){
     return (
       <div className="App">
-        <NavParent resetState = {this.resetState} routeChange = {this.routeChange} isSignedIn = {this.state.isSignedIn} />
         <Particles className='particles' params={particlesOption} />
+        <NavParent resetState = {this.resetState} routeChange = {this.routeChange} isSignedIn = {this.state.isSignedIn} />
         {
           this.state.route === 'home'
           ?
