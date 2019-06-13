@@ -33,7 +33,7 @@ const app = new Clarifai.App({
 });
 
 const initialState = {
-      route: 'home',
+      route: 'signin',
       isSignedIn: false,
       input: '',
       imageUrl: '',
